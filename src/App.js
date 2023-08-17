@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
+  const productos = [
+    {
+      title: "Drone",
+      thumbnail:
+        "https://http2.mlstatic.com/D_NQ_NP_995397-MLU47677853028_092021-O.webp",
+    },
+    {
+      title: "Notebook",
+      thumbnail:
+        "https://http2.mlstatic.com/D_NQ_NP_693497-MLA48980724534_012022-O.webp",
+    },
+    {
+      title: "Notebook",
+      thumbnail:
+        "https://http2.mlstatic.com/D_NQ_NP_693497-MLA48980724534_012022-O.webp",
+    },
+    {
+      title: "Notebook",
+      thumbnail:
+        "https://http2.mlstatic.com/D_NQ_NP_693497-MLA48980724534_012022-O.webp",
+    },
+    {
+      title: "Notebook",
+      thumbnail:
+        "https://http2.mlstatic.com/D_NQ_NP_693497-MLA48980724534_012022-O.webp",
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <ItemListContainer productos={productos}></ItemListContainer>
     </div>
   );
 }

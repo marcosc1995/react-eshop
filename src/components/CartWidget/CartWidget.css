@@ -1,0 +1,18 @@
+.cart-widget {
+  border: 1px solid grey;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.cart-widget-text{
+    margin: 0 5px;
+}
+.cart-widget-number{
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
